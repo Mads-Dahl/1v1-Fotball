@@ -103,7 +103,7 @@ class Ball {
     }
 }
 
-const ball1 = new Ball(canvas.width * 3 / 4, canvas.height / 2, 0, 0, 10, "blue", -8);
+const ball1 = new Ball(canvas.width * 3 / 4, canvas.height / 2 + 1, 0, 0, 10, "blue", -8);
 const ball2 = new Ball(canvas.width * 1 / 4, canvas.height / 2, 0, 0, 10, "red", -7);
 const ball3 = new Ball(canvas.width / 2, canvas.height / 2, 0, 0, 6, "black", 0);
 
@@ -228,8 +228,8 @@ function draw() {
 
     ctx.fillStyle = "black";
     ctx.font = "10px Arial";
-    ctx.fillText("Player 1", ball1.x - 17, ball1.y - 20);
-    ctx.fillText("Player 2", ball2.x - 17, ball2.y - 20);
+    ctx.fillText("Player 2", ball1.x - 17, ball1.y - 20);
+    ctx.fillText("Player 1", ball2.x - 17, ball2.y - 20);
 
     const backgroundImage = new Image();
     backgroundImage.src = "bilder/bane.png";

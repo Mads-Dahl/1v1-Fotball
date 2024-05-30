@@ -27,8 +27,7 @@ header h1 {
 }
 
 .game-info {
-    margin-top: 80px;
-    /* Adjust for header */
+    margin-top: 40px;
     color: #006400;
     font-size: 24px;
     font-weight: bold;
@@ -45,7 +44,6 @@ header h1 {
     background-color: #fff;
     padding: 10px;
     margin-top: 20px;
-    /* Adjust for game info */
 }
 
 #canvas {
@@ -56,11 +54,9 @@ header h1 {
     border-radius: 10px;
 }
 
-/* Scoreboard styling */
 #scoreboard {
     position: absolute;
-    top: 140px;
-    /* Adjust for header and game info */
+    top: 115px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -77,9 +73,16 @@ header h1 {
 }
 
 .controls {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
+    display: flex;
+    margin-top: -20px;
+    gap: 100px;
+    color: #006400;
+    font-size: 15px;
+}
+
+.controls > p {
+    width: 200px;
+    text-align: center;
 }
 
 .winning-screen {
