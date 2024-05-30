@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #006400;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-info {
+    margin-top: 80px;
+    /* Adjust for header */
+    color: #006400;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.canvasdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #006400;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    /* Adjust for game info */
+}
+
+#canvas {
+    width: 1000px;
+    height: 500px;
+    background-color: #87CEEB;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/* Scoreboard styling */
+#scoreboard {
+    position: absolute;
+    top: 140px;
+    /* Adjust for header and game info */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.score {
+    background-color: #006400;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.controls {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.winning-screen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    flex-direction: column;
+    z-index: 10;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+#play-again-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+#play-again-button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
