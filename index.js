@@ -243,7 +243,7 @@ function draw() {
 function resetPositions() {
 
     ball1.x = canvas.width * 3 / 4;
-    ball1.y = canvas.height / 2;
+    ball1.y = canvas.height / 2 + 1;
     ball2.x = canvas.width * 1 / 4;
     ball2.y = canvas.height / 2;
     ball3.x = canvas.width / 2;
